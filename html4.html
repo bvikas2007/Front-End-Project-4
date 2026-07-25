@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+</head>
+
+<body style="font-family: 'Comic Sans MS';">
+
+    <header>
+        <h1>Contact Us</h1>
+        <p>We'd love to hear from you! Fill out the form below.</p>
+    </header>
+
+    <main>
+
+       <form action="https://formspree.io/f/your-form-id" method="POST">
+
+   <table>
+
+    <tr>
+        <td><label for="fullname">Full Name:</label></td>
+        <td>
+            <input type="text" id="fullname" name="fullname" required>
+        </td>
+    </tr>
+
+    <tr>
+        <td><label for="email">Email:</label></td>
+        <td>
+            <input type="email" id="email" name="email" required>
+        </td>
+    </tr>
+
+    <tr>
+        <td><label for="subject">Subject:</label></td>
+        <td>
+            <select id="subject" name="subject">
+                <option>Support</option>
+                <option>Feedback</option>
+                <option>Business Inquiry</option>
+            </select>
+        </td>
+    </tr>
+
+    <tr>
+        <td valign="top">
+            <label for="message">Message:</label>
+        </td>
+        <td>
+            <textarea
+                id="message"
+                name="message"
+                rows="6"
+                cols="40"
+                minlength="20"
+                required>
+            </textarea>
+        </td>
+    </tr>
+
+</table>
+
+            <!-- Radio Buttons -->
+            <fieldset>
+
+                <legend>How did you hear about us?</legend>
+
+                <input
+                    type="radio"
+                    id="friend"
+                    name="source"
+                    value="friend">
+
+                <label for="friend">Friend</label>
+
+                <br>
+
+                <input
+                    type="radio"
+                    id="social"
+                    name="source"
+                    value="social">
+
+                <label for="social">Social Media</label>
+
+                <br>
+
+                <input
+                    type="radio"
+                    id="search"
+                    name="source"
+                    value="search">
+
+                <label for="search">Search Engine</label>
+
+            </fieldset>
+
+            <br>
+
+            <!-- Checkbox -->
+
+            <input
+                type="checkbox"
+                id="newsletter"
+                name="newsletter">
+
+            <label for="newsletter">
+                Subscribe to our newsletter
+            </label>
+
+            <br><br>
+
+            <!-- Submit Button -->
+
+            <button type="submit">
+                Submit Form
+            </button>
+
+        </form>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Contact Form. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>
